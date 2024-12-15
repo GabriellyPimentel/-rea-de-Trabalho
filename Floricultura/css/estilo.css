@@ -1,0 +1,74 @@
+/* Estilos básicos para a página */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    background-size: cover;
+    background-image: url(../img/verde.jpeg);
+}
+
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c0c080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7a7a40;
+}
+
+#imagem-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#imagem {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#mensagem {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}

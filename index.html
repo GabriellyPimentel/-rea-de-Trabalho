@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura</title>
+    <link rel="stylesheet" href="..">
+    <link rel="icon" href="img/logo.jpg">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha sua flor predileta!</h1>
+
+        <!-- Formulário para o usuário inserir o nome do carro -->
+        <label for="flor">Digite o nome da flor:</label>
+        <input type="text" id="flor" placeholder="Exemplo: Rosa, Tulipa, Girassol, Margarita e Lavanda">
+        <button onclick="trocarImagem()">Exibir</button>
+
+        <!-- Div para exibir a imagem do carro -->
+        <div id="imagem-container">
+            <img id="imagem" src="home" alt="Imagem de flores" width="300">
+        </div>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

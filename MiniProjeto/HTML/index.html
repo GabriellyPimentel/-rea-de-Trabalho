@@ -3,37 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Receitas</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Doce Saber</title>
+    <link rel="icon" type="image/x-icon" href="../img/livro.png">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <h1>Cadastro de Receitas</h1>
-    <form id="recipeForm">
-        <label for="recipeName">Nome da Receita:</label>
-        <input type="text" id="recipeName" name="recipeName" required>
+    <div class="form">
+        <form action="javascript:void(0);">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class="login-button">
+                    <button><a href="../HTML/home.html">Voltar</a></button>
+                </div>
+            </div>
 
-        <label for="category">Categoria:</label>
-        <select id="category" name="category">
-            <option value="entrada">Entrada</option>
-            <option value="pratoPrincipal">Prato Principal</option>
-            <option value="sobremesa">Sobremesa</option>
-        </select>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="receita">Receita</label>
+                    <input id="receita" type="text" name="receita" placeholder="Digite o nome da receita" required>
+                </div>
 
-        <label for="difficulty">Dificuldade (1 a 5):</label>
-        <input type="number" id="difficulty" name="difficulty" min="1" max="5" required>
+                <div class="input-box">
+                    <label for="dificuldade">Dificuldade</label>
+                    <select id="dificuldade">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
 
-        <label for="ingredients">Ingredientes:</label>
-        <textarea id="ingredients" name="ingredients" required></textarea>
+            
+                <div class="input-box">
+                    <label for="ingredientes">Ingredientes</label>
+                    <div class="editavel">
+                        <textarea id="ingredientes" name="ingredientes" placeholder="Digite os ingredientes" required></textarea>
+                    </div>
+                </div>
 
-        <label for="preparation">Modo de Preparo:</label>
-        <textarea id="preparation" name="preparation" required></textarea>
+                <div class="input-box">
+                    <label for="preparo">Modo de Preparo</label>
+                    <textarea id="preparo" name="preparo" placeholder="Digite o passo a passo" required></textarea>
+                </div>
 
-        <button type="submit">Cadastrar Receita</button>
-    </form>
+                <div class="input-box">
+                    <label for="rendimento">Rendimento</label>
+                    <select id="rendimento">
+                        <option>1 porção</option>
+                        <option>2 porções</option>
+                        <option>3 porções</option>
+                        <option>4 porções</option>
+                        <option>5 porções</option>
+                    </select>
+                </div>
 
-    <h2>Lista de Receitas</h2>
-    <ul id="recipeList"></ul>
 
-    <script src="scripts.js"></script>
+                <div class="input-box">
+                    <label for="dicas">Dicas e Observações</label>
+                    <textarea id="dicas" name="dicas" placeholder="Digite o passo a passo" required></textarea>
+                </div>
+            </div>
+
+            <div class="categoria-inputs">
+                <div class="categoria-title">
+                    <h6>Categoria</h6>
+                </div>
+
+                <div class="categoria-group">
+                    <div class="categoria-input">
+                        <input id="entrada" type="radio" name="categoria" value="Entrada">
+                        <label for="entrada">Entrada</label>
+                    </div>
+
+                    <div class="categoria-input">
+                        <input id="principal" type="radio" name="categoria" value="Prato Principal">
+                        <label for="principal">Prato Principal</label>
+                    </div>
+
+                    <div class="categoria-input">
+                        <input id="sobremesa" type="radio" name="categoria" value="Sobremesa">
+                        <label for="sobremesa">Sobremesa</label>
+                    </div>
+                </div>
+            </div>
+            <div class="continue-button">
+                <button type="button" onclick="adicionarReceita()">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <ul id="lista-receitas"></ul>
+
+    <script src="../Js/javascript.js"></script>
 </body>
 </html>
